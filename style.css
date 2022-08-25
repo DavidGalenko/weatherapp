@@ -1,0 +1,92 @@
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100 vh;
+    margin: 0;
+    background-image: url(https://source.unsplash.com/weekly?landscape);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    margin: 0;
+}
+.top-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cityName{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    margin-top: 60px;
+    color: white;
+    text-shadow: 1px 1px 0 black,
+                 -1px 1px 0 black,
+                 1px -1px 0 black,
+                 -1px -1px 0 black;
+
+}
+.cityName h1{
+    font-size: 45px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+}
+.sbox{
+    padding: 2em;
+    margin: 50px 0;
+    border-radius: 43px;
+    background: rgba(0, 0, 0, 0.841);
+}
+.sbox .search-bar{
+    outline: none;
+    border: none;
+    padding: 0.7em;
+    border-radius: 20px;
+    background: rgba(190, 190, 190, 0.137);
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+}
+.sbox button {
+    margin: 0.5em;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: none;
+    background: rgba(190, 190, 190, 0.137);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.sbox button:hover{
+    background: rgba(190, 190, 190, 0.282);
+}
+.weather{
+    color: white;
+    padding: 20px 2em;
+    margin: 10px;
+    border-radius: 43px;
+    background: rgba(0, 0, 0, 0.841);
+    width: 100%;
+    max-width: 250px;
+}
+.weather .max{
+    margin-bottom: 10px;
+}
+.weather .desc{
+    text-transform: capitalize;
+    margin: 10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.load {
+    visibility: hidden;
+}
