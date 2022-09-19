@@ -39,7 +39,7 @@ h2{
 }
 .sbox{
     padding: 2em;
-    margin: 50px 0;
+    margin: 30px 0;
     border-radius: 43px;
     background: rgba(0, 0, 0, 0.841);
 }
@@ -83,6 +83,30 @@ h2{
     text-transform: capitalize;
     margin: 10px;
 }
+.btn{
+    position: relative;
+    left: 30%;
+    top: 8px;
+    background-color: rgba(0, 80, 252, 0.27);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn2{
+    position: relative;
+    left: 10%;
+    top: 8px;
+    background-color: rgba(0, 252, 8, 0.27);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -90,3 +114,43 @@ h2{
 .load {
     visibility: hidden;
 }
+.hidden{
+    display: none;
+}
+.info {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+  .info-content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.914);
+    margin: 10% auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 250px; 
+    height: 475px;
+    border-radius: 50px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }

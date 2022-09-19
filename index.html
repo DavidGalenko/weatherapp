@@ -24,14 +24,21 @@
     <div class="container load">
         <div class="weather">
             <h1 class="today">Today</h1>
-            <h2 class="min min1">Min: 70°F</h2>
-            <h2 class="max max1">Max: 70°F</h2>
+            <div id="min-max">
+                <h2 class="min min1">Min: 70°F</h2>
+                <h2 class="max max1">Max: 70°F</h2>
+            </div>
+            <div id="cur" class="hidden" style="margin-top: 29px">
+                <h1 class="current">m</h1>
+            </div>
             <div class="flex">
                 <img src="https://openweathermap.org/img/wn/04d.png" class="icon1" alt="">
                 <div class="description1 desc">Sunny</div>
             </div>
             <div class="humidity1">Humidity: 30%</div>
             <div class="speed1">Wind Speed: 10mph</div>
+            <button style="left: 10%" class="btn">INFO</button>
+            <button class="btn2">CURRENT</button>
         </div>
         <div class="weather">
             <h1 class="tomorrow">Tomorrow</h1>
@@ -43,6 +50,7 @@
             </div>
             <div class="humidity2">Humidity: 30%</div>
             <div class="speed2">Wind Speed: 10mph</div>
+            <button class="btn">INFO</button>
         </div>
         <div class="weather">
             <h1 class="after-tomorrow">After Tomorrow</h1>
@@ -54,6 +62,27 @@
             </div>
             <div class="humidity3">Humidity: 30%</div>
             <div class="speed3">Wind Speed: 10mph</div>
+            <button class="btn">INFO</button>
+        </div>
+
+        <div class="info" id="Info">
+            <div class="info-content">
+                <span class="close">&times;</span>
+                <h1 class="date">today</h1>
+                <div class="flex">
+                    <img src="" class="info-icon" alt="sunny">
+                    <div style="text-transform: capitalize" class="info-desc">Sunny</div>
+                </div>
+                <p class="info-min">Min: </p>
+                <p class="info-max">Max: </p>
+                <p class="sunrise">Sunrise: </p>
+                <p class="sunset">Sunset: </p>
+                <p class="info-wind">Wind: </p>
+                <p class="info-humidity">Humidity: </p>
+                <p class="pressure">Pressure: </p>
+                <p class="cloudprec">Cloud %: </p>
+            </div>
+
         </div>
     
     </div>
